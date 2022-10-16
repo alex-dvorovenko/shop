@@ -1,9 +1,15 @@
 package com.shop;
 
+//Вот тебе еще задание:
+//- Создать класс с названием Store, в котором будет одно поле - массив строк.
+//- В массиме при создании добавить 5 строк: Apple, Milk, Chocolate, Eggs, Banana.
+//- В этом класе создать один метод с названием isInStock, который как параметр принимает строку и возвращает boolean.
+//- Этот метод будет проверять содержить ли массив строку, которая передана как аргумент метода isInStock
+
 public class Shop {
 
     public static void main(String[] args) {
-        System.out.println("Hello world");
+
 
     }
 
