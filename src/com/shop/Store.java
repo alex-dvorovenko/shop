@@ -15,22 +15,26 @@ public class Store {
 
     //static String a = "Banana";
 
-    public boolean isInStock(String str) {
-        //if (str == products){
-        return true;
-        //}
-        //return false;
+    public static boolean isInStock(String str) {
+        for (int i = 0; i < products.length; i++) {
+            if (products[i].equals(str)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public static void main(String[] args) {
         System.out.println(Arrays.toString(products));
-        for (int i = 0; i < products.length; i++) {
-            System.out.println(products[i]);
-            if (products[i].equals("Banana")) {
-                System.out.println("We find it");
-            }
+        if (isInStock("Milk")) {
+            System.out.println("We find Milk");
+        }
+        if (isInStock("Banana")) {
+            System.out.println("We find Banana");
+        }
+        if (isInStock("Mango")){
+            System.out.println("We find Mango");
         }
     }
-
 }
 
